@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var layoutModel = (LayoutModel)ViewBag.LayoutModel;
 }
 
 <div class="text-center">
@@ -13,7 +14,7 @@ const Editor = toastui.Editor;
 const editor = new Editor({
     el: document.querySelector('#editor'),
     previewStyle: 'vertical',
-    height: '500px',
-    theme: 'dark'
+    height: '5000px',
+    theme: @(Html.Raw(layoutModel.IsDarkMode ? "'dark'" : "'light'"))
 });
 </script>

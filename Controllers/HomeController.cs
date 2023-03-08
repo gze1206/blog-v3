@@ -4,7 +4,7 @@ using blog.gze1206.net.Models;
 
 namespace blog.gze1206.net.Controllers;
 
-public class HomeController : Controller
+public class HomeController : LayoutController
 {
     private readonly ILogger<HomeController> _logger;
 

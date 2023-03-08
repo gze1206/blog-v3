@@ -17,6 +17,16 @@ a {
   border-color: #1861ac;
 }
 
+@media (max-width: 576px) {
+  .nav-item {
+    width: 100%!important;
+  }
+  
+  .divider {
+    display: none;
+  }
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
